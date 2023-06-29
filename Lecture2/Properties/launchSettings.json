@@ -1,0 +1,57 @@
+{
+    "profiles": {
+        // Профиль, запускающий swagger UI в development
+        "Development": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            // Определяем ссылку, на которой откроется браузер
+            "launchUrl": "swagger",
+            "environmentVariables": {
+                // Для перменная среды ASPNETCORE_ENVIRONMENT устанавливается значение Development
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "dotnetRunMessages": true,
+            "applicationUrl": "http://localhost:5130"
+        },
+        // Профиль, запускающий swagger.yaml в production
+        "Production": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            // Определяем ссылку, на которой откроется браузер
+            "launchUrl": "swagger/v1/swagger.yaml",
+            "environmentVariables": {
+                // Для перменная среды ASPNETCORE_ENVIRONMENT устанавливается значение Production
+                "ASPNETCORE_ENVIRONMENT": "Production"
+            },
+            "dotnetRunMessages": true,
+            "applicationUrl": "http://localhost:5130"
+        },
+        // Профиль, запускающий swagger.yaml в development
+        "Swagger yaml": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            // Определяем ссылку, на которой откроется браузер
+            "launchUrl": "swagger/v1/swagger.yaml",
+            "environmentVariables": {
+                // Для перменная среды ASPNETCORE_ENVIRONMENT устанавливается значение Development
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "dotnetRunMessages": true,
+            "applicationUrl": "http://localhost:5130"
+        },
+        // Профиль, запускающий swagger.json в development
+        "Swagger json": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            // Определяем ссылку, на которой откроется браузер
+            "launchUrl": "swagger/v1/swagger.json",
+            "environmentVariables": {
+                // Для перменная среды ASPNETCORE_ENVIRONMENT устанавливается значение Development
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "dotnetRunMessages": true,
+            "applicationUrl": "http://localhost:5130"
+        }
+    },
+    "$schema": "https://json.schemastore.org/launchsettings.json"
+}
